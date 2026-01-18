@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="left">
+      <span class="s1">🛒 Shopping Cart</span><br>
+      <input
+        type="text"
+        placeholder="search products..."
+        oninput="searchProducts()"
+        id="search"
+      />
+      <div class="products" id="products"></div>
+    </div>
+    <div class="cart">
+      <span class="s2">➕ Your Cart</span>
+      <div class="cart-c" id="cart-c">
+        <div class="cart-p"></div>
+      </div>
+      <p class="total" id="total">Total:$0</p>
+    </div>
+
+    <!-- Link external JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
